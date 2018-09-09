@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(commonConfig, {
   mode: 'development',
-  entry:{hello:'./hello'},
+  entry:{ hello: './hello' },
   // entry: [
   //   'react-hot-loader/patch', // activate HMR for React
   //   'webpack-dev-server/client?http://localhost:8080',// bundle the client for webpack-dev-server and connect to the provided endpoint

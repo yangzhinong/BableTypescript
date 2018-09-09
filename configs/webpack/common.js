@@ -4,8 +4,7 @@ const {CheckerPlugin} = require('awesome-typescript-loader');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 var ClearwebpackPlugin = require("clean-webpack-plugin");
 
-const {getEntry} = require('./y.path');
-var jsEntries =getEntry();
+
 
 
 
@@ -14,7 +13,6 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
-  entry:jsEntries,
   context: resolve(__dirname, '../../src'),
   module: {
     rules: [
